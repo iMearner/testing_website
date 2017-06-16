@@ -9,10 +9,10 @@
 		// connecting with mysql
 		include('config.php');
 		if(isset($_POST['first_name'])){
-			$first_name = $_post['first_name'] ;
+			$first_name = $_POST['first_name'] ;
 		}
 		if(isset($_POST['last_name'])){
-			$last_name = $_post['last_name'] ;	
+			$last_name = $_POST['last_name'] ;	
 		}
 		$query = "INSERT INTO mytable(first_name,last_name) VALUES('$first_name','$last_name');";
 		if($conn,$query){
