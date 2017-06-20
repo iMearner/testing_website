@@ -2,7 +2,7 @@
 	include('config.php');
 
 	$firstname = $_POST['first_name'];
-	$lastname = $_POST['last_name'] ;
+	
 
 	$query = "SELECT first_name,last_name FROM mytable WHERE first_name='$firstname'  ;" ;
 
