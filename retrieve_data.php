@@ -1,17 +1,22 @@
 <?php 
 	include('config.php');
 
-	$query = 'SELECT first_name,last_name FROM mytable ;' ;
+	$firstname = $_POST['first_name'];
+	$lastname = $_POST['last_name'] ;
+
+	$query = "SELECT first_name,last_name FROM mytable WHERE first_name='$firstname'  ;" ;
 
 	$retval = mysqli_query($conn,$query);
 	if(!$retval){
 		die("could not get data" . mysql_error() );
 	}
-
-	while($row = mysqli_fetch_assoc($retval)){
-		echo " <br>Name: " . $row["first_name"]. " " . $row["last_name"]. "<br>";
+	if (mysqli_num_rows($retval) == 0) {
+		echo "<br> no data found <br>" ;
 	}
-
-	echo "fetch data successfully  .. ." ;
+	else{
+		while($row = mysqli_fetch_assoc($retval)){
+		echo " <br>Name: " . $row["first_name"]. " " . $row["last_name"]. "<br>";
+		}
+	}
 
 ?>
