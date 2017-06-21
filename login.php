@@ -1,4 +1,16 @@
 <html>
+	<style type="text/css">
+		.dropdown-content{
+			display: none ;
+		}
+		.show{
+			display: block;
+		}
+		.dropdown-content a{
+			color: black;
+
+		}
+	</style>
 
 	<head>login page</head>
 	<body>
@@ -23,7 +35,7 @@
 	<!-- creating a drop down menu using java script and little bit of css	 -->
 		<div>
 			<button onclick="myFunction()" class="dropdownbtn" >menu</button>
-			<div class="dropdown-content" style="display:none;">
+			<div class="dropdown-content" id="content">
 				<a href="#home">home</a>
 				<a href="#contact">contact</a>
 				<a href="#bblog">blog</a>
@@ -32,7 +44,7 @@
 		
 		<script>
 			function myFunction(){
-				document.getElementsByClassName('dropdown-content').style.display = "block" ;
+				document.getElementById('content').classList.toggle("show") ;
 			}
 
 		</script>
