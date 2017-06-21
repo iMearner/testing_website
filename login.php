@@ -1,4 +1,3 @@
-
 <html>
 
 	<head>login page</head>
@@ -21,7 +20,22 @@
 ?>
 
 		<br>
-		<br>
-		<p>to check database connection click <a href="config.php">here</a>.</p>
+	<!-- creating a drop down menu using java script and little bit of css	 -->
+		<div>
+			<button onclick="myFunction()" class="dropdownbtn" >menu</button>
+			<div class="dropdown-content" style="display:none;">
+				<a href="#home">home</a>
+				<a href="#contact">contact</a>
+				<a href="#bblog">blog</a>
+			</div>
+		</div>
+		
+		<script>
+			function myFunction(){
+				document.getElementsByClassName('dropdown-content').style.display = "block" ;
+			}
+
+		</script>
+
 	</body>
 </html>
