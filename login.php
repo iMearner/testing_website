@@ -10,6 +10,7 @@
 			color: black;
 
 		}
+		
 	</style>
 
 	<head>login page</head>
@@ -46,6 +47,13 @@
 			function myFunction(){
 				document.getElementById('content').classList.toggle("show") ;
 			}
+			window.onclick = function(event) {
+				if(!event.target.matches('.dropdownbtn')){
+				var temp = document.getElementById('content')
+				temp.className = "dropdown-content";
+			}
+			}
+			
 
 		</script>
 
