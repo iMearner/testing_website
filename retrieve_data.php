@@ -25,7 +25,7 @@
 		if (isset($_POST['check_name'])) {
 			$firstname = $_POST['check_name'];
 			echo " " .$firstname ;
-			$query = "SELECT first_name,last_name FROM mytable WHERE first_name='$check_name'  ;" ;
+			$query = "SELECT first_name,last_name FROM mytable WHERE first_name='$firstname'  ;" ;
 		}else{
 			echo "error" . mysqli_error() ;
 		}
