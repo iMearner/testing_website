@@ -1,14 +1,23 @@
 <html>
 	<style type="text/css">
+		body{
+			background-color: #50074C;
+		}
 		.dropdown-content{
 			display: none ;
 		}
 		.show{
 			display: block;
 		}
-		.dropdown-content a{
+		.b{
+			display: inline-block;
+			float: left;
 			color: black;
-
+			text-decoration: none;
+			background-color: #50004C ;
+		}
+		.b : hover{
+			background-color: white ;
 		}
 		
 	</style>
@@ -19,9 +28,11 @@
 		<div style="float:right;">
 			<button onclick="myFunction()" class="dropdownbtn"  >menu</button>
 			<div class="dropdown-content" id="content">
-				<a href="#home">home</a>
-				<a href="#contact">contact</a>
-				<a href="#bblog">blog</a>
+				<a class="b" href="#home">home</a>
+				<br>
+				<a class="b" href="#contact">contact</a>
+				<br>
+				<a class="b" href="#bblog">blog</a>
 			</div>
 		</div>
 		<h1>this form is to insert data in database </h1>
