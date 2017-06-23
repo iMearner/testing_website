@@ -15,6 +15,15 @@
 
 	<head>login page</head>
 	<body>
+		<!-- creating a drop down menu using java script and little bit of css	 -->
+		<div style="float:right;">
+			<button onclick="myFunction()" class="dropdownbtn" >menu</button>
+			<div class="dropdown-content" id="content">
+				<a href="#home">home</a>
+				<a href="#contact">contact</a>
+				<a href="#bblog">blog</a>
+			</div>
+		</div>
 		<h1>this form is to insert data in database </h1>
 		<form action="welcome.php" method = "post">
 			first name : <input type="text" name="first_name">
@@ -33,15 +42,7 @@
 ?>
 
 		<br>
-	<!-- creating a drop down menu using java script and little bit of css	 -->
-		<div>
-			<button onclick="myFunction()" class="dropdownbtn" >menu</button>
-			<div class="dropdown-content" id="content">
-				<a href="#home">home</a>
-				<a href="#contact">contact</a>
-				<a href="#bblog">blog</a>
-			</div>
-		</div>
+	
 		
 		<script>
 			function myFunction(){
