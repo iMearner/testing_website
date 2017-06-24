@@ -24,6 +24,7 @@
 
 	<head>login page</head>
 	<body>
+		<img src="header.png" style="width:1200px; height:200px;	">
 		<!-- creating a drop down menu using java script and little bit of css	 -->
 		<div style="float:right;">
 			<button onclick="myFunction()" class="dropdownbtn"  >menu</button>
