@@ -1,7 +1,7 @@
 <html>
 	<style type="text/css">
 		body{
-			background-color: #50074C;
+			background-color: #508D6C;
 		}
 		.dropdown-content{
 			display: none ;
@@ -14,28 +14,47 @@
 			float: left;
 			color: black;
 			text-decoration: none;
-			background-color: #50004C ;
+			background-color: #508D6C ;
 		}
 		.b : hover{
 			background-color: white ;
 		}
+		.top-navigation {
+			background-color: #333 ;
+			overflow: hidden;
+		}
+
+		.top-navigation a {
+		    float: left;
+		    display: block;
+		    color: #f2f2f2;
+		    text-align: center;
+		    padding: 14px 26px;
+		    text-decoration: none;
+		    font-size: 17px;
+		}
 		
+		.top-navigation a:hover {
+		    background-color: #ddd;
+		    color: black;
+		}
+
+		.top-navigation a.active {
+		    background-color: #4CAF50;
+		    color: white;
+		}
 	</style>
 
 	
 	<body>
 		<img src="header.png" style="width:100%; height:150px;	">
-		<!-- creating a drop down menu using java script and little bit of css	 -->
-		<div style="float:right;">
-			<button onclick="myFunction()" class="dropdownbtn"  >menu</button>
-			<div class="dropdown-content" id="content">
-				<a class="b" href="#home">home</a>
-				<br>
-				<a class="b" href="#contact">contact</a>
-				<br>
-				<a class="b" href="#bblog">blog</a>
-			</div>
+		<div class="top-navigation" id="navigation">
+			<a href="#home">Home</a>
+			<a href="#contact">Contact</a>
+			<a href="#bblog">Blog</a>
 		</div>
+		<!-- creating a drop down menu using java script and little bit of css	 -->
+		
 		<h1>this form is to insert data in database </h1>
 		<form action="retrive.php" method = "post" >
 			first name : <input type="text" name="first_name">
@@ -52,22 +71,19 @@
 
 ?>
 
-		<br>
-	
-		
-		<script>
-			function myFunction(){
-				document.getElementById('content').classList.toggle("show") ;
-			}
-			window.onclick = function(event) {
-				if(!event.target.matches('.dropdownbtn')){
-				var temp = document.getElementById('content')
-				temp.className = "dropdown-content";
-			}
-			}
+		 <script>
+		// 	function myFunction(){
+		// 		document.getElementById('content').classList.toggle("show") ;
+		// 	}
+		// 	window.onclick = function(event) {
+		// 		if(!event.target.matches('.dropdownbtn')){
+		// 		var temp = document.getElementById('content')
+		// 		temp.className = "dropdown-content";
+		// 	}
+		// 	}
 			
 
-		</script>
+		// </script>
 
 	</body>
 </html>
