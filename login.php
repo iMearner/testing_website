@@ -40,19 +40,33 @@
 			float: right;
 			margin-top: 100px;
 			margin-right: 150px;
+			background-color: blue;
+		}
+		.dropbtn{
+			padding: 10px;
+			background-color: green;
+			border: none;
+			color: white;
+		}
+		.dropdown:hover .dropdown-content{
+			display: block;
 		}
 		.dropdown-content{
-			display: block;
-			background-color: blue;
+			display: none;
 		    position: absolute;
 		    background-color: #f9f9f9;
+		    color: black;
 		    min-width: 80px;
 		    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 		    z-index: 1;
 		}
 		.dropdown-content a {
-			display: inherit;
-
+			display: block;
+			text-decoration: none;
+			color: black;
+		}
+		.dropdown-content a:hover{
+			background-color: #505050;
 		}
 	</style>
 
@@ -73,7 +87,7 @@
 		 </div>
 
 		 <div class="dropdown">
-		 	<button>menu</button>
+		 	<button class="dropbtn">test menu</button>
 		 	<div class="dropdown-content">
 		 		<a href="#">test type 1</a>
 		 		<a href="#">test type 2</a>
@@ -85,12 +99,5 @@
 		 	</div>
 		 </div>
 	 </form>
-
-	 
-
-		
-	
-
-
-	</body>
+</body>
 </html>
