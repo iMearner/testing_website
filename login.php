@@ -1,74 +1,7 @@
 <html>
-	<style type="text/css">
-		body{
-			background-color: #508D6C;
-		}
-		.top-navigation {
-			background-color: #333 ;
-			overflow: hidden;
-		}
-
-		.top-navigation a {
-		    float: left;
-		    display: block;
-		    color: #f2f2f2;
-		    text-align: center;
-		    padding: 14px 26px;
-		    text-decoration: none;
-		    font-size: 17px;
-		}
-		
-		.top-navigation a:hover {
-		    background-color: #ddd;
-		    color: black;
-		}
-
-		.top-navigation a.active {
-		    background-color: #4CAF50;
-		    color: white;
-		}
-		.login-credintial {
-			margin: 100px ;
-			width: 300px;
-			float: left;
-		}
-		.login-credintial input{
-			margin: 10px;
-			border-radius: 5px;
-		}
-		.dropdown{
-			float: right;
-			margin-top: 100px;
-			margin-right: 150px;
-			background-color: blue;
-		}
-		.dropbtn{
-			padding: 10px;
-			background-color: green;
-			border: none;
-			color: white;
-		}
-		.dropdown:hover .dropdown-content{
-			display: block;
-		}
-		.dropdown-content{
-			display: none;
-		    position: absolute;
-		    background-color: #f9f9f9;
-		    color: black;
-		    min-width: 80px;
-		    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-		    z-index: 1;
-		}
-		.dropdown-content a {
-			display: block;
-			text-decoration: none;
-			color: black;
-		}
-		.dropdown-content a:hover{
-			background-color: #505050;
-		}
-	</style>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
 
 	
 	<body>
@@ -79,11 +12,11 @@
 			<a href="#bblog">Blog</a>
 		</div>
 	 <!-- now create login page that check admin is available in database  -->
-	 <form  method="post">
+	 <form  action="retrive.php" method="post">
 	 	<div class="login-credintial">
-		 	Username : <input type="text" name="uername"><br>
+		 	Username : <input type="text" name="username"><br>
 		 	Password : <input type="password" name="password"  style="margin-left:12px;"><br>
-		 	<input type="submit" style="float:right; margin-right:50px;">
+		 	<input type="submit" style="float:right; margin-right:50px;" value="login" name="submit">
 		 </div>
 
 		 <div class="dropdown">
@@ -98,15 +31,16 @@
 		 		<a href="#">test type 7</a>
 		 	</div>
 		 </div>
-		 
+
 		 <div class="dropdown">
-		 	<button class="dropbtn">test menu</button>
+		 	<button class="dropbtn">level</button>
 		 	<div class="dropdown-content">
 		 		<a href="#">low</a>
 		 		<a href="#">medium</a>
 		 		<a href="#">high</a>
+		 		</div>
 		 	</div>
-		 </div>
 	 </form>
-</body>
+
+	</body>
 </html>
