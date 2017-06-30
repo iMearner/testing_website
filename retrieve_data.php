@@ -12,10 +12,6 @@
 			<a href="#bblog">Blog</a>
 		</div>
 	 <!-- now create login page that check admin is available in database  -->
-	 
-
-	</body>
-</html>
 
 <?php
 
@@ -46,9 +42,23 @@
 				}				
 			}	
 		}
-		
-		
+?>		
+	 
+	 <h1>some tests are lested below practice and enjoy...! </h1>
+	 <div class="test-list">
+		 		<a href="#">test type 1</a>
+		 		<a href="#">test type 2</a>
+		 		<a href="#">test type 3</a>
+		 		<a href="#">test type 4</a>
+		 		<a href="#">test type 5</a>
+		 		<a href="#">test type 6</a>
+		 		<a href="#">test type 7</a>
+		 	</div>
+	</body>
+</html>
 
+		
+<!-- 
 	// if (isset($_POST['check_name_submit'])) {
 	// 	if (isset($_POST['check_name'])) {
 	// 		$firstname = $_POST['check_name'];
@@ -75,6 +85,6 @@
 	// 		}
 	// 	}
 	// }
-	
+	 -->
 
-?>
+
