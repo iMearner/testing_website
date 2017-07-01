@@ -55,13 +55,12 @@
 	 	<link rel="stylesheet" type="text/css" href="style.css">
 	 	<h1>some tests are lested below practice and enjoy...! </h1>
 	 	<link rel="stylesheet" type="text/css" href="style.css">
-		 		<a href="#">test type 1</a>
-		 		<a href="#">test type 2</a>
-		 		<a href="#">test type 3</a>
-		 		<a href="#">test type 4</a>
-		 		<a href="#">test type 5</a>
-		 		<a href="#">test type 6</a>
-		 		<a href="#">test type 7</a>
+		 		<a href="#">Injection</a>
+		 		<a href="#">Cross Site Scripting(XSS)</a>
+		 		<a href="#">Authentication and Session issues</a>
+		 		<a href="#">Arbitrary file access</a>
+		 		<a href="#">Http parameter pollution</a>
+		 		<a href="#">Parameter tempering</a>
 		 	</div>
 	</body>
 </html>
