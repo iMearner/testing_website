@@ -35,17 +35,25 @@
 			else{
 				$row = mysqli_fetch_assoc($retval) ;
 				if(count($row)==0){
-					echo "sorry!..no user found...!" ;
-				}
-				else{
+					echo "sorry!..no user found...! <br><h1>you have to login to go further....</h1>" ;
+				 ?>
+				<style> 
+					.login-test-list{
+						display: none ;
+
+					}
+				</style>
+				<?php }else{
 					echo "<br>welcome <h1>" . $row["first_name"] . "</h1> " ;	
-				}				
+				 }				
 			}	
 		}
 ?>		
 	 
-	 <h1>some tests are lested below practice and enjoy...! </h1>
-	 <div class="test-list">
+	 
+	 <div class="login-test-list">
+	 	<link rel="stylesheet" type="text/css" href="style.css">
+	 	<h1>some tests are lested below practice and enjoy...! </h1>
 		 		<a href="#">test type 1</a>
 		 		<a href="#">test type 2</a>
 		 		<a href="#">test type 3</a>
