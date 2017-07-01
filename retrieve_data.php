@@ -54,6 +54,7 @@
 	 <div class="login-test-list">
 	 	<link rel="stylesheet" type="text/css" href="style.css">
 	 	<h1>some tests are lested below practice and enjoy...! </h1>
+	 	<link rel="stylesheet" type="text/css" href="style.css">
 		 		<a href="#">test type 1</a>
 		 		<a href="#">test type 2</a>
 		 		<a href="#">test type 3</a>
