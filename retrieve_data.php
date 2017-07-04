@@ -55,12 +55,12 @@
 	 	<link rel="stylesheet" type="text/css" href="style.css">
 	 	<h1>some tests are lested below practice and enjoy...! </h1>
 	 	<link rel="stylesheet" type="text/css" href="style.css">
-		 		<a href="#">Injection</a>
-		 		<a href="#">Cross Site Scripting(XSS)</a>
-		 		<a href="#">Authentication and Session issues</a>
-		 		<a href="#">Arbitrary file access</a>
-		 		<a href="#">Http parameter pollution</a>
-		 		<a href="#">Parameter tempering</a>
+		 		<a href="test-cases/injection.php">Injection</a>
+		 		<a href="test-cases/xss.php">Cross Site Scripting(XSS)</a>
+		 		<a href="test-cases/authentication_issues.php">Authentication and Session issues</a>
+		 		<a href="test-cases/file-access-test.php">Arbitrary file access</a>
+		 		<a href="test-cases/http-parameter-pollution.php">Http parameter pollution</a>
+		 		<a href="test-cases/parameter-tempering.php">Parameter tempering</a>
 		 	</div>
 	</body>
 </html>
